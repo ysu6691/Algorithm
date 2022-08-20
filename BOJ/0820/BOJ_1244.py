@@ -14,8 +14,8 @@ def switch(s_list, idx):
 N = int(input())
 
 # 스위치 리스트의 0번째 인덱스에 -1 저장
-# 1번째인덱스부터 차례대로 스위치 현황 저장
-switch_list = [-1]
+# 1번째인덱스부터 차례대로 스위치 현황 저장 
+switch_list = [-1]  
 switch_list.extend(list(map(int, input().split())))
 
 # 학생 수 저장

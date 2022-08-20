@@ -11,7 +11,7 @@ N = int(input())
 width_list = []
 height_list = []
 
-# 가로와 세로 각각 자르는 지점 리스트에 추가
+# 가로와 세로 각각 자르는 지점 리스트에 추가 
 for _ in range(N):
 
     check, number = map(int, input().split())

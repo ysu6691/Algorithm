@@ -19,7 +19,7 @@ for i in range(1, 5):
         long.append(i)
 
 # total_area: 긴 두 개의 변 저장
-# del_idx: 빈 공간을 둘러싸는 두 개의 변을 제외한 나머지 인덱스를 저장 (i-1, i+1)
+# del_idx: 빈 공간을 둘러싸는 두 개의 변을 제외한 나머지 인덱스를 저장 (i-1, i+1) 
 total_area = []
 del_idx = []
 

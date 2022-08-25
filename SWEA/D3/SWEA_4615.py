@@ -13,7 +13,7 @@ def change(x, y, color):
 
                 elif arr[ny][nx] == color:
                     for j in range(cnt):
-                        arr[y+dy[i]*cnt][x+dx[i]*cnt] = color
+                        arr[y+dy[i]*(j+1)][x+dx[i]*(j+1)] = color
                     break
 
                 else:
@@ -30,6 +30,9 @@ for tc in range(1, testcase+1):
 
     arr = [[0] * (N+2) for _ in range(N+2)]
 
+    arr[N//2][N//2], arr[N//2+1][N//2+1] = 2, 2
+    arr[N//2+1][N//2], arr[N//2][N//2+1] = 1, 1
+
     dx = [-1, 1, -1, 1, -1, 1, 0, 0]
     dy = [-1, 1, 1, -1, 0, 0, -1, 1]
 
@@ -38,4 +41,14 @@ for tc in range(1, testcase+1):
         arr[y][x] = color
         change(x, y, color)
 
-    print(arr)
+    white = 0
+    black = 0
+
+    for i in range(1, N+1):
+        for j in range(1, N+1):
+            if arr[i][j] == 1:
+                black += 1
+            elif arr[i][j] == 2:
+                white += 1
+
+    print(f'#{tc} {black} {white}')

@@ -3,7 +3,6 @@ def solution(places):
 
     for p in range(5):
         place = places[p]
-        print(place)
         finish = False
         for i in range(5):
             for j in range(5):
@@ -45,5 +44,3 @@ def solution(places):
                 break
 
     return answer
-
-print(solution(a))

@@ -1,3 +1,4 @@
+# pypy에서만 시간초과 x
 N = int(input())
 N_list = list(map(int, input().split()))
 operators = list(map(int, input().split()))
@@ -50,7 +51,7 @@ print(max_acc)
 print(min_acc)
 
 ##########################################################
-
+# python에서도 시간초과 x
 N = int(input())
 N_list = list(map(int, input().split()))
 operators = list(map(int, input().split()))

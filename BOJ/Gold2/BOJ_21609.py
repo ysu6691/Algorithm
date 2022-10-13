@@ -81,7 +81,7 @@ while True:
                                 continue
 
                 # continue 되지 않은 블록이 가장 큰 블록임
-                max_cnt = cnt # 최댓갑 갱신
+                max_cnt = cnt # 최댓값 갱신
                 max_position_list = tmp_position_list[:] # 블록들 위치 기억
                 max_cnt_zero = cnt_zero # 그떄의 무지개 블록 수 기억
                 max_position = (i, j) # 그때의 기준 블록 위치 기억

@@ -1,5 +1,3 @@
-from collections import deque
-
 def solution(n, path, order):
     
     adj_list = [[] for _ in range(n)]

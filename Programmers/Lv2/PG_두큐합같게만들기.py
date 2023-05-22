@@ -31,11 +31,11 @@ def solution(queue1, queue2):
             break
 
         # ex)
-        # [1, 1, 1, 1, 1], [1, 1, 1, 9, 1]
+        # [1, 1, 1, 1, 1], [1, 1, 1, 9, 1] (length = 5)
         # [1, 1, 1, 1, 1, 1, 1, 1], [9, 1]   -> length - 2
         # [], [9, 1, 1, 1, 1, 1, 1, 1, 1, 1] -> length + length - 2
         # [9], [1, 1, 1, 1, 1, 1, 1, 1, 1]   -> 1
-        # length - 2 + length + length - 2 + 1 = length * 3  - 3
+        # (length - 2) + (length + length - 2) + (1) = 3*length - 3
         if answer == length * 3 - 2:
             answer = -1
 

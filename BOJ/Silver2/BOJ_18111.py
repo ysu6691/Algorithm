@@ -26,11 +26,13 @@ for r in range(N):
 min_time = 987654321
 answer_height = 0
 
+# 모든 높이 보기
 for height in range(min_height, max_height + 1):
 
     amount_to_fill = 0
     amount_to_dig = 0
 
+    # 해당 높이에서 채워야 하는 양과 파내야 하는 양 비교
     for h in height_dict:
         if h > height:
             amount_to_dig += (h - height) * height_dict[h]

@@ -12,7 +12,7 @@ while num % K:
     if num in memo:
         answer = -1
         break
-    memo.add(num)
+    memo.add(num)   
     answer += 1
 
 print(answer)
